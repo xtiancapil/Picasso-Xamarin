@@ -1,0 +1,46 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='com.squareup.picasso']" name="managedName">Squareup.Picasso</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp']" name="managedName">Squareup.OkHttp</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.okio']/class[@name='Okio']" name="name">SquareupOkio</attr>
+  <attr path="/api/package[@name='com.squareup.picasso']/class[@name='Picasso']" name="name">Picasso</attr>
+
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.http']/class[@name='AbstractHttpInputStream']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.http']/class[@name='RetryableOutputStream']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.http']/interface[@name='Transport']" name="name">ITransport</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.http']/class[@name='DelegatingHttpsURLConnection']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.http']/class[@name='RetryableSink']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.http']/class[@name='HttpConnection.ChunkedSource']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.http']/class[@name='HttpConnection.ChunkedSink']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.okio']/class[@name='Deadline']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.spdy']/interface[@name='Variant']" name="name">IVariant</attr>
+  <remove-node path="/api/package[@name='com.squareup.okhttp.internal.okio']/class[@name='OkBuffer']/method[@name='deadline']" />
+
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.http']/class[@name='HttpsURLConnectionImpl']/method[@name='getHeaderFields' and count(parameter)=0]" name="managedReturn">System.Collections.Generic.IDictionary&lt;string, System.Collections.Generic.IList&lt;string&gt;&gt;</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.http']/class[@name='HttpsURLConnectionImpl']/method[@name='getRequestProperties' and count(parameter)=0]" name="managedReturn">System.Collections.Generic.IDictionary&lt;string, System.Collections.Generic.IList&lt;string&gt;&gt;</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.http']/class[@name='HttpsURLConnectionImpl']/method[@name='getResponseCode' and count(parameter)=0]" name="managedReturn">Java.Net.HttpStatus</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.http']/class[@name='HttpURLConnectionImpl']/method[@name='getResponseCode' and count(parameter)=0]" name="managedReturn">Java.Net.HttpStatus</attr>
+
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.okio']/class[@name='OkBuffer']/method[@name='emitCompleteSegments' and count(parameter)=0]" name="managedReturn">Com.Squareup.Okhttp.Internal.Okio.IBufferedSink</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.okio']/class[@name='OkBuffer']/method[@name='write' and count(parameter)=1 and parameter[1][@type='byte[]']]" name="managedReturn">Com.Squareup.Okhttp.Internal.Okio.IBufferedSink</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.okio']/class[@name='OkBuffer']/method[@name='write' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" name="managedReturn">Com.Squareup.Okhttp.Internal.Okio.IBufferedSink</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.okio']/class[@name='OkBuffer']/method[@name='write' and count(parameter)=1 and parameter[1][@type='com.squareup.okhttp.internal.okio.ByteString']]" name="managedReturn">Com.Squareup.Okhttp.Internal.Okio.IBufferedSink</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.okio']/class[@name='OkBuffer']/method[@name='write' and count(parameter)=2 and parameter[1][@type='com.squareup.okhttp.internal.okio.OkBuffer'] and parameter[2][@type='long']]" name="managedReturn">void</attr>
+
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.okio']/class[@name='OkBuffer']/method[@name='writeByte' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Squareup.Okhttp.Internal.Okio.IBufferedSink</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.okio']/class[@name='OkBuffer']/method[@name='writeInt' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Squareup.Okhttp.Internal.Okio.IBufferedSink</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.okio']/class[@name='OkBuffer']/method[@name='writeShort' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Squareup.Okhttp.Internal.Okio.IBufferedSink</attr>
+  <attr path="/api/package[@name='com.squareup.okhttp.internal.okio']/class[@name='OkBuffer']/method[@name='writeUtf8' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Squareup.Okhttp.Internal.Okio.IBufferedSink</attr>
+  
+  <!-- Taken from paulcbetts https://github.com/paulcbetts/OkHttp-Xamarin binding project -->
+  <!-- NB: The binder leaves off an 'overload' keyword, so this method causes a compiler error -->  
+  <remove-node path="/api/package[@name='com.squareup.okhttp']/class[@name='HttpResponseCache']/method[@name='get']" />
+  <remove-node path="/api/package[starts-with(@name, 'com.squareup.okhttp.internal')]" />
+  <!-- /end Taken from paulcbetts https://github.com/paulcbetts/OkHttp-Xamarin binding proejct -->
+</metadata>
