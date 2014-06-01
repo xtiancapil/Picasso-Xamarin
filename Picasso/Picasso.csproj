@@ -55,7 +55,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Xamarin.Android.Bindings.targets" />
   <ItemGroup>
-    <EmbeddedJar Include="Jars\picasso-2.2.0.jar" />
     <EmbeddedJar Include="Jars\okhttp-1.5.4.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\picasso-2.3.1.jar" />
   </ItemGroup>
 </Project>

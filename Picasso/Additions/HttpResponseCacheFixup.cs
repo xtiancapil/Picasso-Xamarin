@@ -18,7 +18,7 @@ namespace Squareup.OkHttp
                 id_get_Ljava_net_URI_Ljava_lang_String_Ljava_util_Map_ = JNIEnv.GetMethodID (class_ref, "get", "(Ljava/net/URI;Ljava/lang/String;Ljava/util/Map;)Ljava/net/CacheResponse;");
             IntPtr native_p1 = JNIEnv.NewString (p1);
             IntPtr native_p2 = global::Android.Runtime.JavaDictionary<string, global::System.Collections.Generic.IList<string>>.ToLocalJniHandle (p2);
-            global::Java.Net.CacheResponse __ret = global::Java.Lang.Object.GetObject<global::Java.Net.CacheResponse> (JNIEnv.CallObjectMethod  (Handle, id_get_Ljava_net_URI_Ljava_lang_String_Ljava_util_Map_, new JValue (p0), new JValue (native_p1), new JValue (Java.Interop.JavaObjectExtensions.ToInteroperableCollection (p2))), JniHandleOwnership.TransferLocalRef);
+            global::Java.Net.CacheResponse __ret = global::Java.Lang.Object.GetObject<global::Java.Net.CacheResponse>(JNIEnv.CallObjectMethod(Handle, id_get_Ljava_net_URI_Ljava_lang_String_Ljava_util_Map_, new JValue(p0), new JValue(native_p1), new JValue(global::Android.Runtime.JavaDictionary<string, global::System.Collections.Generic.IList<string>>.ToLocalJniHandle(p2))), JniHandleOwnership.TransferLocalRef);
             JNIEnv.DeleteLocalRef (native_p1);
             JNIEnv.DeleteLocalRef (native_p2);
             return __ret;
